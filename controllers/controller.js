@@ -13,7 +13,6 @@ const createtech = async (req, res) => {
         res.status(500).json({ message: 'Internal Server Error' });
     }
 };
-
 const remove = (req, res) => {
     let newProject = req.body;
     model.deletetech(newProject, (error, result) => {
