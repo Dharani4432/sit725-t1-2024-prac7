@@ -41,7 +41,7 @@ const addProjectToApp = (project) => {
 
 
 $(document).ready(function () {
-    const socket = io();
+    const socket = io("http://localhost:5503");
     socket.on('number', (msg) => {
         console.log('random number: ' + msg);
         

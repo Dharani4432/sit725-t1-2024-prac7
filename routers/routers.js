@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 const controller = require('../controllers/controller');
 
-router.post('/api/tech', (req, res) => {
+router.post('zz/api/tech', (req, res) => {
     controller.createtech(req, res);
 });
 
